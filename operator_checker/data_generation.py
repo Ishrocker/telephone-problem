@@ -8,6 +8,12 @@ def prefix(length: int) -> str:
 
     String will have no leading zero.
     """
+    if not isinstance(length, int):
+        raise TypeError("`length` must be of type `int`")
+
+    if length >= 6 and length > 0:
+        raise ValueError("`length` must be greater than 0 and less than 6")
+
     prefix_buffer: list = []
     for i in range(length):
         if i == 0:
