@@ -1,3 +1,11 @@
+### Testing
+
+To run unit test run the following command from the repos root directory:
+
+```bash
+python3 -m unittest discover
+``` 
+
 ### Routing of telephone calls
 
 Some telephone operators have submitted their price lists including price per
