@@ -1,3 +1,35 @@
+### Run tests
+standing in the root dir of the project run
+
+```bash
+python3 -m unittest discover
+```
+
+### Run app
+
+standing in the root dir of the project run
+
+```bash
+python3 operator_checker 1 --file ./operator_checker/dummy_data.txt
+```
+
+accepts as positional arguments the phone numbers or prefixs to look up
+
+--file is expected to be a file with data formatted as the excersise states:
+
+```
+Operator NameOfSomeOperator:
+prefix value
+prefix value
+
+Operator NameOfSomeOperator:
+prefix value
+prefix value
+```
+
+Only limit to the size of the file is the memory of your machine.
+excersise states that data should be assumed to fit in memory.
+
 ### Routing of telephone calls
 
 Some telephone operators have submitted their price lists including price per
