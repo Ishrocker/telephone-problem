@@ -1,19 +1,18 @@
 ### Run tests
-standing in the root dir of the project run
+Standing in the root dir of the project run
 
 ```bash
 python3 -m unittest discover
 ```
 
 ### Run app
-
-standing in the root dir of the project run
+Standing in the root dir of the project run
 
 ```bash
-python3 operator_checker 1 --file ./operator_checker/dummy_data.txt
+python3 operator_checker 14155559485 --file ./operator_checker/dummy_data.txt
 ```
 
-accepts as positional arguments the phone numbers or prefixs to look up
+Accepts as positional arguments the phone number(s) or prefix(s) to lookup
 
 --file is expected to be a file with data formatted as the excersise states:
 
@@ -29,6 +28,12 @@ prefix value
 
 Only limit to the size of the file is the memory of your machine.
 excersise states that data should be assumed to fit in memory.
+
+For more information us
+
+```bash
+python3 operator_checker --help
+```
 
 ### Routing of telephone calls
 
