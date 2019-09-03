@@ -206,7 +206,3 @@ class TestPrefixCache(unittest.TestCase):
     def test_not_match_with_find_phone_number_returns_none(self):
         no_match = self.cache.find_prefix("999")
         self.assertEqual(no_match, None)
-
-    def test_find_with_prefix_can_handle_one_digit(self):
-        no_match = self.cache.find_prefix("1")
-        print(no_match)

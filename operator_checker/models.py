@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from decimal import Decimal
 
 
-def raise_type_error(instance, prop: str, expected_type: str):
+def raise_type_error(instance: object, prop: str, expected_type: str):
     err_msg = (
         f"Property `{prop}` of instance `{type(instance).__name__}` expected "
         f"to be of type {expected_type} but was type "
@@ -179,7 +179,7 @@ class PrefixCache:
         return match
 
     @classmethod
-    def build_cache(klass, operators: Tuple[Operator, ...]) -> "PrefixCache":
+    def build_cache(klass: "PrefixCache", operators: Tuple[Operator, ...]) -> "PrefixCache":
         """ Build a `PrefixCache` from a tuple of `Operators`. """
         prefix_cache = klass()
         for operator in operators:
