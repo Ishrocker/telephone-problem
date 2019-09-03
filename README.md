@@ -27,9 +27,9 @@ prefix value
 ```
 
 Only limit to the size of the file is the memory of your machine.
-excersise states that data should be assumed to fit in memory.
+Excersise states that data should be assumed to fit in memory.
 
-For more information us
+For more information use:
 
 ```bash
 python3 operator_checker --help
